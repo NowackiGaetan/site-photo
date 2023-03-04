@@ -205,3 +205,36 @@ html{
     text-decoration: none;
     font-family: 'Poppins',sans-serif;
 }
+
+/*-------------Page contact-----------*/
+
+.container-form{
+   display: flex;
+   justify-content: center;
+   background: $mygray;
+   padding-top: 100px;
+}
+
+.form{
+    background: white;
+    padding: 25px;
+    border-radius: 15px;  
+    width: 300px; 
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    padding-top: 10px;
+}
+
+form label{
+    padding-top: 10px;
+}
+
+form button{
+    margin-top: 15px;
+}
