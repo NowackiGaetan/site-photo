@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  background-color: #47555E;
+}
+
+/*-------------Page index----------*/
+.title {
+  margin: 0;
+  background-image: url("./photo/photo-accueil.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.title a {
+  color: rgb(200, 200, 200);
+  font-family: "Alex Brush", sans-serif;
+  font-size: 6em;
+  text-decoration: none;
+}
+.title a:hover {
+  color: white;
+  cursor: pointer;
+}
+
+/*--------------Page Galerie------------------*/
+.galery-page {
+  background: #47555E;
+}
+
+.navbar {
+  background: #47555E;
+  border-bottom: 1px solid white;
+}
+
+.logo-charles img {
+  width: 200px;
+}
+
+.logo-network {
+  display: flex;
+  flex-direction: row;
+}
+
+.list-menu {
+  padding: 35px;
+  font-family: "Alex Brush", sans-serif;
+  font-size: 2em;
+  text-decoration: none;
+  color: rgb(221, 221, 221);
+}
+.list-menu:hover {
+  color: white;
+}
+
+#filters {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Alex Brush", sans-serif;
+}
+
+#filters div {
+  cursor: pointer;
+  color: rgb(200, 200, 200);
+}
+#filters div:hover {
+  color: white;
+}
+
+.galery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.img-galery {
+  width: 30%;
+  margin: 10px;
+}
+
+.active {
+  padding: 5px;
+  transition: width 0.5s;
+}
+
+.inactive {
+  width: 0;
+  padding: 0;
+  transition: width 0.5s;
+}
+
+/*-----------------Page Tarifs-------------------*/
+.tarif {
+  padding-top: 100px;
+  background: #47555E;
+  color: black;
+  font-weight: bold;
+  font-family: "Alex Brush", sans-serif;
+  font-size: 3em;
+}
+
+.text-left-tarif {
+  background: grey;
+  width: 500px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  margin-top: 100px;
+  position: absolute;
+  right: 40%;
+  opacity: 0.8;
+}
+
+.img-left, .img-right {
+  border-radius: 25px;
+}
+
+.tarif-left {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  padding-right: 100px;
+}
+
+.tarif-left, .tarif-right {
+  padding-top: 100px;
+}
+
+.tarif-right {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  padding-left: 100px;
+}
+
+.text-right {
+  background: grey;
+  width: 600px;
+  height: 200px;
+  text-align: center;
+  border-radius: 50px;
+  margin-top: 100px;
+  position: absolute;
+  left: 40%;
+  opacity: 0.8;
+}
+
+.text-right-family {
+  height: auto;
+}
+
+.text-right p, .text-left p {
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.text-left {
+  background: grey;
+  width: 600px;
+  height: 200px;
+  text-align: center;
+  border-radius: 50px;
+  margin-top: 100px;
+  position: absolute;
+  right: 40%;
+  opacity: 0.8;
+}
+
+.footer {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.back-to-top a {
+  padding: 5px;
+  background: gray;
+  border-radius: 30px;
+  height: 35px;
+  color: rgb(200, 200, 200);
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+.back-to-top a:hover {
+  color: white;
+}/*# sourceMappingURL=style.css.map */
