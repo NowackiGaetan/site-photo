@@ -343,6 +343,11 @@ form button {
     padding-top: 50px;
   }
 }
+@media screen and (max-width: 450px) {
+  .text-left-tarif {
+    font-size: 1.6rem;
+  }
+}
 @media screen and (max-width: 400px) {
   .img-left, .img-right {
     width: 200px;
@@ -365,5 +370,10 @@ form button {
   }
   .footer {
     padding-top: 100px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .text-left {
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
