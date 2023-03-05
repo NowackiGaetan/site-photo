@@ -12,7 +12,7 @@ html{
 /*-------------Page index----------*/
 
 .title{
-    margin:0;
+    //margin:0;
     background-image: url("./photo/photo-accueil.png");
     background-size: cover;
     background-repeat:no-repeat ;
@@ -25,13 +25,15 @@ html{
 .title a{    
     color: rgb(200,200,200);
     font-family: $myfontfamily;
-    font-size: 6em;
     text-decoration: none;
+    font-size: 6em;
         &:hover{
             color: white;
             cursor: pointer;
         }
 }
+
+
 
 /*--------------Page Galerie------------------*/
 
@@ -63,6 +65,10 @@ html{
     &:hover{
         color: white;
     }
+}
+
+.dropdown{
+    display: none;
 }
 
 #filters{
@@ -113,6 +119,8 @@ html{
     font-weight: bold;
     font-family: $myfontfamily;
     font-size: 3em;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .text-left-tarif{
@@ -238,3 +246,144 @@ form label{
 form button{
     margin-top: 15px;
 }
+
+/*-------------------Responsive-------------------*/
+
+@media screen and (max-width: 1200px){
+    .title a{
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .list-menu{
+        font-size: 1.5em;
+        padding: 25px;
+    }
+    .img-left,.img-right{
+        width: 500px ;
+    }
+    .text-left-tarif, .text-left, .text-right{
+        width: 400px;
+        height: auto;
+    }
+    .text-left p, .text-right p, .text-left-tarif p{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .title a{
+        font-size: 3em;
+    }
+    .title{
+        background-position: center ;
+    }
+    .logo-charles img{
+        width: 150px;
+    }
+    .img-left,.img-right{
+        width: 400px ;
+    }
+    .text-left-tarif, .text-left, .text-right{
+        width: 300px;
+        height: auto;
+        font-size:2rem ;
+    }
+    .text-left p, .text-right p, .text-left-tarif p{
+        font-size: 1rem;
+    }
+    .tarif-left, .tarif-right{
+        padding-top: 50px;
+    }
+    .img-galery.active{
+        width: 50%;        
+    }
+    .galery{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-galery.inactive{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .list-menu{
+        display: none;
+    }
+    .dropdown{
+        display: block;
+        right: 10%;
+        color: white;
+    }
+    .hamburger{
+        color: white;
+    }
+    .img-left,.img-right{
+        width: 350px ;
+    }
+    .text-left-tarif, .text-left, .text-right{
+        width: 250px;
+        height: auto;
+    }
+    .text-left p, .text-right p, .text-left-tarif p{
+        font-size: 0.8rem;
+    }
+    .tarif{
+      padding-top: 50px ;  
+    }
+
+}
+
+@media screen and (max-width: 680px){
+    .title a{
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .img-left,.img-right{
+        width: 250px ;
+    }
+    .text-left-tarif, .text-left, .text-right{
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+    }
+    .text-left p, .text-right p, .text-left-tarif p{
+        font-size: 0.5rem;
+        flex-wrap: wrap;
+    }
+    .tarif{
+        padding-top: 25px;
+    }
+    .footer{
+        padding-top: 50px ;
+    }
+}
+ @media screen and (max-width: 400px){
+    .img-left,.img-right{
+        width: 200px ;
+    }
+    .text-left-tarif, .text-left, .text-right{
+        width: auto;
+        height: auto;
+        border-radius: 5px;
+        font-size: 1.5rem;
+    }
+    .text-left p, .text-right p, .text-left-tarif p{
+        font-size: 0.5rem;
+        flex-wrap: wrap;
+    }
+    .tarif{
+        padding-top: 15px;
+    }
+    .tarif-left, .tarif-right{
+        padding-top: 100px;
+    }
+    .footer{
+        padding-top: 100px;
+    }
+ }
+
